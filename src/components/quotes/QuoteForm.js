@@ -16,7 +16,7 @@ const QuoteForm = (props) => {
     const enteredAuthor = authorInputRef.current.value
     const enteredText = textInputRef.current.value
 
-    // optional: Could validate here
+    // Could validate here
 
     props.onAddQuote({ author: enteredAuthor, text: enteredText })
   }
@@ -27,10 +27,10 @@ const QuoteForm = (props) => {
 
   return (
     <>
-      <Prompt
+      {/* <Prompt // no stable replacment in v6
         when={isEntering}
         message="Are you sure you want to leave? All entered data will be lost!"
-      />
+      /> */}
       <Card>
         <form
           onFocus={formFocusedHandler}
