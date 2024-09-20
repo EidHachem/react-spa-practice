@@ -12,7 +12,7 @@ const DUMMY_DATA = [
 const QuoteDetail = () => {
   const { quoteId } = useParams()
 
-  const quote = DUMMY_DATA.find((quote) => quote.id == quoteId)
+  const quote = DUMMY_DATA.find((quote) => quote.id === quoteId)
 
   if (!quote) {
     return <p>No quote found!</p>
